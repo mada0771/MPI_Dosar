@@ -1,0 +1,37 @@
+-1: (respins cu rezerve/weak reject)
+
+Lucrarea adresează subiectul: mai exact, promite analiza și compararea a două metode de rezolvare a problemei satisfiabilității booleene (SAT):Davis-Putnam și DPLL.
+
+Prezentarea conținutului lucrării
+
+Introducere începe cu o declarație de originalitate prin care autorul își susține contribuția și specifică domeniul din care provine problema satisfiabilității și câteva domenii în care este folosită.
+
+A doua secțiune conține o definiție a problemei satisfiabilității, o specifică drept problemă NP-completă și ne spune cine a demonstrat acest lucru. 
+
+În incipitul celei de a treia secțiuni avem o descriere a metodei brute-force a algoritmului DP, însoțită de o parte din cod pentru o mai bună asociere și înțelegere a codului, precizându-se totodată complexitatea metodei respective, cât și avantajele și dezavantajele.
+Subsecțiunea 3.2 ne prezintă apariția metodei DP și în ce constă această metodă. 
+Următoarea subsecțiune are în vedere algoritmul DPLL, pașii care compun algoritmul respectiv și partea din codul Python care arată implementarea acestei metode în program. Asemenea algoritmului DP, și DPLL aduce avantaje și dezavantaje procesului de rezolvare a problemei SAT.
+
+Secțiunea patru prezintă motivația alegerii limbajului Python pentru implementarea codului și explică organizarea algoritmilor (citire, verificare, rezolvare, pornire/raportare) DP și DPLL implementați. 
+
+În secțiunea cinci, autorul explică cum a testat eficiența algoritmilor și prezintă cu ajutorul tabelelor Latex rezultatele obținute. Drept referință, este specificat sistemul pe care a fost rulat și testat programul, dat fiind că rezultatele pot fi influențate de componentele computerului folosit. Tabelele arată analiza timpului de execuție pentru cele 2 metode de rezolvare, punând în lumină diferențele majore atât dintre DP și DPLL, cât și între pașii consecutivi a câte unei metode.
+
+Autorul declară în secțiunea "Observații comparative" că, DP este mai eficient pentru seturi mari de date, în timp ce DP este mai bun pentru seturi mici.
+
+În secțiunea dedicată exemplelor din viața reală, descrie cum este utilă problema satisfiabilității pentru diferite task-uri, cele menționate de către autor fiind verificarea circuitelor hardware, testarea și analiza software și inteligența artificială. 
+
+Ultima secțiune pune în lumină diferențele principale dintre DP și DPLL și eficiența acestora pentru diferite seturi de date, DP reieșind mai bun pentru seturi mari de date prin viteza de prelucrare a datelor, iar DPLL pentru seturi mai mici prin eliminarea literalilor puri și propagarea unităților.
+
+La final lucrarea are atașat link-ul către codurile implementate în Python pentru DP și DPLL.
+
+Concluzii
+
+Autorul ar putea introduce mai multe secțiuni pentru o mai bună calitate a lucrării, cum ar fi, exemple de clauze logice simple care mai apoi să fie rezolvate pas cu pas prin cele două metode, DP și DPLL, instrucțiuni de citire a lucrării, pe lângă codurile în Python un exemplu de date de testare pentru utilizatori, comparație a rezultatelor și problemelor întâmpinate cu literatura de specialitate, instrucțiuni de testare a programelor și interpretare a rezultatelor. Acestea sunt doar câteva părți pe care dacă autorul le-ar introduce ar crește semnificativ valoarea lucrării. 
+
+De asemenea, rezultatele obținute și prezentate nu se aseamănă cu ceea ce ne prezintă literatura despre problema satisfiabilității. Din literatură aflăm faptul că DPLL este în teorie și în practică o versiune avansată, mai bună a algoritmului DP, fapt dovedit prin teste, de către oameni importanți din domeniu, DPLL reprezentând și o bază de pornire spre noile solvere pentru problema SAT. Acest lucru creează confunzie date fiind rezultatele algoritmilor folosiți în experiment, care contrazic literatura de specialitate, motiv pentru care trebuie o analiză detaliată a metodelor folosite în implementarea algoritmilor DP și DPLL.
+
+Deși lucrarea pare destul de clară pentru a putea face o evaluare, stadiul prezent al lucrării nu este unul tocmai bun. Autorul ar trebui să revizuiască munca sa și să mai adauge la lucrare câteva aspecte importante, care pot face o mare diferență. Totodată, lucrarea consta în analizarea a cel puțin trei algoritmi folosiți pentru SAT, lucru asupra căruia autorul ar trebui să mediteze pentru a crea o lucrare mai bună. 
+
+
+
+

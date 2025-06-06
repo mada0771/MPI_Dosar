@@ -1,0 +1,31 @@
+1: (acceptat cu rezerve/weak accept)
+
+Lucrarea adresează subiectul: mai exact, promite analiza și compararea a trei metode de rezolvare a problemei satisfiabilității booleene (SAT): Rezoluție, Davis-Putnam și DPLL pe un set de formule al bibliotecii SATLIB.
+
+Prezentarea conținutului lucrării
+
+În introducere este prezentată, pe scurt, proveniența problemei satisfiabilității propoziționale, descrierea acesteia, domeniile științifice în care este aplicată, cât și un fenomen aparte cu consecințe semnificative în testarea algoritmilor de rezolvare. Ni se mai face cunoscut faptul că lucrarea își propune să analizeze comportamentul celor trei metode de rezolvare a problemeie SAT, Rezoluție, Davis-Putnam, DPLL, dar și o declarație de originalitate a contribuțiilor autorului în lucrare și instrucțiuni de parcurgere a lucrării. Totuși, autorul sare peste câțiva pași care ar putea ajuta la o mai bună înțelegere a problemei și a importanței acesteia, cum ar fi: o descriere informală a pașilor de rezolvare a problemei, câteva exemple simple ilustrative din viața de zi cu zi și un exemplu mai complex pe care să fie ilustrată problema. 
+
+A doua secțiune descrie formal problema satisfiabilității, ilustrate cu ajutorul unei formule din logica computațională și explică clar, pe exemple de variabile soluționarea problemei SAT pe aceasta. Mai apoi autorul prezintă un exemplu de set de date în format DIMACS, format standard al librăriei SATLIB utilizate, cu explicații detaliate și prezintă legătura dintre fenomenul menționat anterior de "tranziție de fază" și complexitatea rezolvării problemei, cauza fiind densitatea clauzelor și variabilelor utilizate. Informațiile prezentate sunt importante în înțelegerea atât a problemei, cât și a testării acesteia. O primă confuzie apare în exprimarea "forma normală conjunctivă (CNF)", ceea ce este în paranteză trecând drept abreviere, dar corect ar fi fost "(FNC)" pentru a întruni ordinarea corectă a cuvintelor în limba română, CNF fiind abrevierea pentru "forma normală conjunctivă" pe engleză (Conjunctive normal form). Un alt aspect mai puțin pozitiv îl reprezintă repetarea acelorași informații (problema SAT este NP completă)
+
+În cea de a treia secțiune putem vedea o parte a codului scris în limbajul Python, cât și descrierea implementării pașilor fiecărei metode de rezolvare a problemei în algoritmi. Explicațiile sunt unele clare și oferă și perspective asupra diferitor cazuri de care utilizatorul se poate lovi. S-a specificat tipul datelor de test utilizate, formule generate aleator și fișisere SATLIB cu format DIMACS și metricile care sunt analizate de către algoritmi și anume: timpul de execuție, memoria RAM utilizată, memoria de vârf și o siguranță de timeout la depășirea a 10 secunde per formulă. 
+
+Secțiunea a patra se axează pe studiul de caz și începe cu o frază despre influența complexității asupra răspunsului problemei (satisfiabil sau nesatisfiabil). Pe urmă este expus o altă parte a codului cu un comentariu care indică scopul acestei părți din cod. Autorul prezintă grafic rezultatele celor trei metode de rezolvare, raportând o diferență semnificativă dintre resursele utilizate de algoritmul Rezoluției față de algoritmul Davis-Putnam și DPLL, acestea din urmă aducând rezultate mai benefice.
+
+În secțiunea a cincea doar se reia descrierea pe scurt a celor trei metode de rezolvare, rezumând informațiile din secțiunea a treia (partea 3.2).
+
+Secțiunea 6 ne face cunoscute problemele întâmpinate pe parcursul dezvoltării și testării algoritmilor, cât și câteva observații legate de rezultatele testelor. Aceste informații sunt însoțite de grafice care expun o statistică a timpului de execuție al fiecărui algoritm, memoria medie utilizată și distribuția rezultatelor. Totuși, nu știm de pe ce date au rezultat rapoartele respective.
+
+În "Discuții și comparații" avem un tabel cu date analitice pentru algoritmi care transmit superioritatea metodei DPLL în fața celorlalte. Ni se specifica faptul că, rezultatele găsite de autor sunt asemănătoare cu cele de la competițiile SAT, lucru susținut de rezultatele testelor din fișierul excel.
+
+Următorul paragraf scoate în lumină legătura dintre rezultatele testelor și observațiile făcute de către autor pe parcursul experimentului cu informații din literaura de specialitate, un exemplu fiind utilizarea redusă a metodei Rezoluției datorită ineficienței acesteia, fapt demonstrat de rezultatele autorului din experimente și de către Zhang și Malik în lucrarea lor. O scurtă istorisire a formării metodei DPLL, însoțită de demonstrarea fenomenului de tranziție și exprimarea importanței benchmark-urilor rezultă în reconfirmarea informațiilor din literatură prin experimente derulate pe date. 
+
+Concluzii
+
+Prezentarea pare suficient de clară pentru a face o evaluare rezonabilă a obiectivelor și rezultatelor. Rezultatele par a fi corecte și de folos pentru o bună perspectivă de viitor asupra posibilelor îmbunătățiri ce se pot aduce algoritmilor SAT de rezolvare. Termenii care țin de domeniu indică un anumit control al autorului asupra informațiilor de bază despre SAT, dar pentru unii cititori poate crea ambiguitate, fiind neexplicați mai în detaliu. Lucrarea mai are atașat codul sursă și pe lângă aceasta, un fișier cu datele de test, cât și rezultatele întoarse de algoritmi. 
+
+De asemenea, experimentul reafirmă faptul că DPLL reprezintă un punct important de plecare spre dezvoltarea de noi solvere SAT, mai eficiente. 
+
+În concluzie, lucrarea este una decentă, dar existând posibilitate de îmbunătățire spre exemplu, exemple simple, ilustrative din viața oamenilor, care să ofere o mai bună viziune și înțelegere asupra problemei. Ar trebui urmărit, repetarea cât mai puțină a informațiilor din lucrare, și introduse informații noi. Un alt lucru de ajutor ar putea fi explicarea pe scurt a tabelelor și graficelor, însoțite de datele exacte care au fost testate sau o referință către ele. 
+
+

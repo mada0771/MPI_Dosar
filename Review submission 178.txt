@@ -1,0 +1,37 @@
+2: (accepted/acceptat)
+Preliminary remarks
+
+The paper addresses the topic: specifically, it promises to analyze and compare three methods for solving the Boolean satisfiability (SAT) problem: Resolution, Davis-Putnam, and DPLL, through tests with thousands of clauses, and to verify whether DPLL is indeed superior to its predecessors in all practical aspects.
+
+Overview of the paper's content
+
+In the introduction, we are presented with the motivation and aim of the paper, which is the practical analysis of the performance of the three SAT algorithms, evaluating their runtime and memory usage to see where complexity theories apply or break down in concrete implementations. We are also told that the author used Python and a random generator for testing, a simple example of clauses, as well as a declaration of originality  and the paper's organization, providing a solid foundation for the introduction.
+
+The second section is divided into three subsections and presents a theoretical foundation for the work, with the three SAT-solving algorithms described from a theoretical perspective.
+The description of the DPLL algorithm is the shortest, even though the paper aims to emphasize this algorithm. The backtracking part of the algorithm could be described in more detail, as this aspect represents an advantage over the DP algorithm. The description of the other two algorithms is clear, with simple examples provided, which makes it easier to understand.
+
+In the third section, we are presented with more theoretical details regarding the choice of programming language used for implementing the algorithms, the sequential implementation of the three SAT algorithms, the random data generator, and how a new user should test the program. For Resolution, the algorithm is optimized by avoiding the creation of identical clauses and repeated checking of the same clause combination, while also imposing two limits: if it reaches over 10,000 clauses or takes over 100,000 steps, the algorithm returns an "UNKNOWN" message. Regarding the clause generator, it is stated that its results are influenced by the clause-to-variable ratio.
+This section also includes the code for the SAT solvers and their resulting analytical data, however, it is difficult for us to ascertain the correctness of the results because we do not have the exact variables used for tests.
+
+The next section considers how clauses are assigned randomly, two functions used in the algorithm for measurement, and the technical equipment required for testing the program.
+
+The fifth section displays the results obtained by the algorithms and expresses them visually using graphs and LaTeX tables. These show the significant differences between the three algorithms on various datasets, and at the end, explain the importance and influence of the clause/variable ratio on the tests. However, it would have been helpful if the tested variables were displayed separately to better understand their interpretation.
+
+The "Related Work" section is short and refers to the origin of the DP and DPLL algorithms, while also highlighting relevant information about DP and DPLL solvers from specialized literature.
+
+In the Conclusion and Future Work, results appear as expected, with DPLL dominating the studied SAT solvers due to its capabilities, and Resolution remaining an optimal option for small clause sets because of its fewer steps compared to DP and DPLL. Despite the consistent trend in the differences between the three algorithms, it is stated that the Python language clearly influences the clarity of the results due to the garbage collector and memory analysis.
+
+Conclusions
+
+The results presented are quite important, as they are proving the differences of the algorithms' results influenced primarily by the clause/variable ratio, which can lead us to which one of the three algorithms would be a better choice in a problem. At the same time, throughout the paper, the connection between the conducted experiment and the specialized literature is highlighted, with the results of the experiment confirming the findings established at a higher level of research.
+
+The paper is also suitable for those who want to start learning about this field, especially about the satisfiability problem, as the steps are relatively clearly presented, although solving a practical and specific example would help achieve a clearer understanding. 
+
+Regarding the implementation of the language in Python, I believe the author could further explain how various methods mentioned actually work, such as how the garbage collector is used, how precise memory analysis is handled, and how this influences execution time. 
+
+
+
+
+
+
+
